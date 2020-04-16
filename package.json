@@ -1,6 +1,6 @@
 {
   "name": "rv-serve-directory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Serve a directory on the local network",
   "main": "index.js",
   "keywords": [
@@ -10,7 +10,7 @@
     "serve-directory-153"
   ],
   "scripts": {
-    "postpublish" : "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
+    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
   },
   "author": "Vighnesh Raut",
   "license": "ISC",
