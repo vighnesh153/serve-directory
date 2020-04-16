@@ -1,4 +1,8 @@
 const nodePath = require('path');
+const os = require('os');
+const networkInterfaces = os.networkInterfaces();
+const ipAddress = networkInterfaces['en0'][1]['address'];
+
 const express = require('express');
 const app = express();
 
@@ -13,14 +17,16 @@ module.exports = (port, path) => {
     app.use(express.static(path));
 
     app.use((req, res) => noPathFound(req, res, path));
-
     app.listen(port, () => {
-           console.log(`Server is listening on port ${port}.`);
-       })
-       .on('error', (e) => {
-           if (e.code === 'EADDRINUSE') {
-               console.log(`Port ${port} already in use!`);
-               console.log('Provide different port. eg. --port=4200');
-           }
-       });
+        console.log(`Directory: ${path}`);
+        console.log(`Server is listening on port ${port}.`);
+        console.log(`On this machine: http://localhost:${port}/`);
+        console.log(`On local network: http://${ipAddress}:${port}/`);
+    })
+        .on('error', (e) => {
+            if (e.code === 'EADDRINUSE') {
+                console.log(`Port ${port} already in use!`);
+                console.log('Provide different port. eg. --port=4200');
+            }
+        });
 };
