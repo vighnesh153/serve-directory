@@ -10,6 +10,7 @@ const directoryHandler = require('./controllers/directory-handler');
 const noPathFound = require('./controllers/404-handler');
 
 app.set('view engine', 'ejs');
+app.set('views', nodePath.join(__dirname, 'views'));
 
 module.exports = (port, path) => {
     app.use(express.static(nodePath.join(__dirname, 'static')));
