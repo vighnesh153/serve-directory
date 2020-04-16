@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Directory Server</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <main>
+        <h1>File Browser</h1>
+        <ol class="list">
+            <% for (let file of files) { %>
+                <li class="list-item">
+                    <% if (file.isDirectory) { %>
+                        <img class="icon" alt="Directory"
+                             src="/images/folder-solid.svg">
+                    <% } else { %>
+                        <img class="icon" alt="File"
+                             src="/images/file-alt-solid.svg">
+                    <% } %>
+                    <a class="list-item-link" href="<%= file.url %>">
+                        <%= file.name %>
+                    </a>
+                </li>
+            <% } %>
+        </ol>
+    </main>
+</body>
+</html>

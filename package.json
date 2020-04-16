@@ -1,0 +1,23 @@
+{
+  "name": "serve-directory-153",
+  "version": "1.0.0",
+  "description": "Serve a directory on the local network",
+  "main": "index.js",
+  "keywords": [
+    "local-server",
+    "directory-serve",
+    "serve-directory",
+    "serve-directory-153"
+  ],
+  "author": "Vighnesh Raut",
+  "license": "ISC",
+  "bin": "./cli.js",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vighnesh153/serve-directory-153.git"
+  }
+}
