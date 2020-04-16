@@ -1,5 +1,5 @@
 {
-  "name": "serve-directory-153",
+  "name": "rv-serve-directory",
   "version": "1.0.0",
   "description": "Serve a directory on the local network",
   "main": "index.js",

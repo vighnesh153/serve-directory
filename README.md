@@ -5,16 +5,16 @@ they are accessible on your network.
 
 * Usage:
 ```shell script
-    npx serve-directory-153
+    npx rv-serve-directory
 ```
 This will serve your home directory.
 
 * Serve a different directory:
 ```shell script
-    npx serve-directory-153 path/to/directory
+    npx rv-serve-directory path/to/directory
 ```
 
 * Default port busy? Serve on different port.
 ```shell script
-    npx serve-directory-153 --port=4200
+    npx rv-serve-directory --port=4200
 ```
