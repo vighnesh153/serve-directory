@@ -1,7 +1,6 @@
 const nodePath = require('path');
-const os = require('os');
-const networkInterfaces = os.networkInterfaces();
-const ipAddress = networkInterfaces['en0'][1]['address'];
+const ip = require('ip');
+const ipAddress = ip.address();
 
 const express = require('express');
 const app = express();

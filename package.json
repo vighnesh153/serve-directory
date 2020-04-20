@@ -1,6 +1,6 @@
 {
   "name": "rv-serve-directory",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Serve a directory on the local network",
   "main": "index.js",
   "keywords": [
@@ -17,10 +17,11 @@
   "bin": "./cli.js",
   "dependencies": {
     "ejs": "^3.0.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "ip": "^1.1.5"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vighnesh153/serve-directory-153.git"
+    "url": "https://github.com/rv-npm/serve-directory-153.git"
   }
 }
