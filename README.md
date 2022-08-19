@@ -13,18 +13,18 @@ browser.
 
 This will serve your current directory.
 
-```shell script
-    npx rv-serve-directory
+```sh
+npx rv-serve-directory
 ```
 
 ## Serve a different directory
 
-```shell script
-    npx rv-serve-directory --path /usr/bin
+```sh
+npx rv-serve-directory --path /usr/bin
 ```
 
 ## Default port busy? Serve on different port.
 
-```shell script
-    npx rv-serve-directory --port 4200
+```sh
+npx rv-serve-directory --port 4200
 ```
