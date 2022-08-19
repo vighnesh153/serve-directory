@@ -1,6 +1,6 @@
 {
   "name": "rv-serve-directory",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Serve a directory on the local network",
   "main": "index.js",
   "prettier": "@vighnesh153/prettier-config",
