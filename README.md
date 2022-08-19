@@ -1,9 +1,7 @@
 # rv-serve-directory
 
-![](https://img.shields.io/npm/dt/rv-serve-directory)
-
 [![npm](https://img.shields.io/npm/v/rv-serve-directory)](https://www.npmjs.com/package/rv-serve-directory)
-[![npm](https://img.shields.io/npm/dt/@vighnesh153/use-global-state)](https://img.shields.io/npm/dt/@vighnesh153/use-global-state)
+[![npm](https://img.shields.io/npm/dt/rv-serve-directory)](https://img.shields.io/npm/dt/rv-serve-directory)
 [![GitHub](https://img.shields.io/github/license/vighnesh153/serve-directory)](https://github.com/vighnesh153/serve-directory/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/vighnesh153/serve-directory)](https://github.com/vighnesh153/serve-directory/issues)
 
