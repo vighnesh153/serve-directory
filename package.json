@@ -4,6 +4,9 @@
   "description": "Serve a directory on the local network",
   "main": "index.js",
   "prettier": "@vighnesh153/prettier-config",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "local-server",
     "directory-serve",
@@ -16,7 +19,9 @@
   "scripts": {
     "lint:prettier:all": "prettier --ignore-path ./node_modules/@vighnesh153/prettier-config/.prettierignore",
     "lint:prettier:staged": "pretty-quick --staged --ignore-path ./node_modules/@vighnesh153/prettier-config/.prettierignore",
-    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
+    "git:rebase": "git fetch && git rebase origin/master",
+    "build": "echo building",
+    "release": "npm run build && standard-version && git push --follow-tags && npm publish --access=public"
   },
   "author": "Vighnesh Raut",
   "license": "ISC",
@@ -34,6 +39,7 @@
   "devDependencies": {
     "@vighnesh153/prettier-config": "^1.0.3",
     "prettier": "^2.7.1",
-    "pretty-quick": "^3.1.3"
+    "pretty-quick": "^3.1.3",
+    "standard-version": "^9.5.0"
   }
 }
