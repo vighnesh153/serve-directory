@@ -3,25 +3,37 @@
   "version": "1.0.3",
   "description": "Serve a directory on the local network",
   "main": "index.js",
+  "prettier": "@vighnesh153/prettier-config",
   "keywords": [
     "local-server",
     "directory-serve",
     "serve-directory",
-    "serve-directory-153"
+    "serve-directory-153",
+    "serve",
+    "directory",
+    "file-transfer"
   ],
   "scripts": {
+    "lint:prettier:all": "prettier --ignore-path ./node_modules/@vighnesh153/prettier-config/.prettierignore",
+    "lint:prettier:staged": "pretty-quick --staged --ignore-path ./node_modules/@vighnesh153/prettier-config/.prettierignore",
     "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
   },
   "author": "Vighnesh Raut",
   "license": "ISC",
   "bin": "./cli.js",
   "dependencies": {
-    "ejs": "^3.0.2",
-    "express": "^4.17.1",
-    "ip": "^1.1.5"
+    "commander": "^9.4.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "ip": "^1.1.8"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rv-npm/serve-directory-153.git"
+    "url": "https://github.com/vighnesh153/serve-directory.git"
+  },
+  "devDependencies": {
+    "@vighnesh153/prettier-config": "^1.0.3",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3"
   }
 }
