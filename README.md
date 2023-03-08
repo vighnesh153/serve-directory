@@ -1,3 +1,7 @@
+DEPRECATED 
+
+THIS PACKAGE HAS BEEN DEPRECATED IN FAVOUR OF [@vighnesh153/ftp-server](https://www.npmjs.com/package/@vighnesh153/ftp-server). IT WAS NOT FUN TO MAINTAIN MULTIPLE REPOSITORIES AND I HAVE NOW MOVED ALL MY PACKAGES TO A SINGLE MONOREPO. APOLOGIES FOR THE INCONVINIENCE. [NEW REPOSITORY](https://github.com/vighnesh153/vighnesh153-turbo)
+
 # rv-serve-directory
 
 [![npm](https://img.shields.io/npm/v/rv-serve-directory)](https://www.npmjs.com/package/rv-serve-directory)
